@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Filter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+</head>
+<body>
+
+    <div class="head">
+        <h1 id="heading">Filter Fun</h1>
+    </div>
+    <div class="canva">
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <div class="loader">
+        <h2 id="loadimage">Load Image</h2>
+        <input type="file" multiple="false" accept="image/*" id="finput" onchange="upload()">
+    </div>
+
+    <div class="chooser">
+        <h2 id="choose">Choose Your Filter</h2>
+        <input type="button" value="Grayscale" onclick="makeGray()" id="graybutton" class="button">
+        <input type="button" value="Red" onclick="makeRed()" id="redbutton" class="button">
+        <input type="button" value="Green" onclick="makeGreen()" id="greenbutton" class="button">
+        <input type="button" value="Blue" onclick="makeBlue()" id="bluebutton" class="button">
+        <input type="button" value="Rainbow" onclick="makeRainbow()" id="rainbowbutton" class="button">
+    </div>
+    
+    <div class="resetter">
+        <input type="button" value="Reset Image" onclick="resetImage()" id="resetbutton" class="button">
+    </div>
+
+    
+</body>
+</html>
