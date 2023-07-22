@@ -1,0 +1,191 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 15px;
+}
+
+.logo {
+    display: inline-block;
+    position: absolute;
+    color: azure;
+    top: -35px; left: 150px;
+    filter: invert(100%);
+}
+
+.logotext {
+    position: absolute;
+    color: black;
+    width: 150px;
+    top: 120px;
+    left: 105px;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: block;
+    text-align: center;
+    width: 40%;
+    margin: 30px auto;
+}
+
+nav ul {
+    list-style:none;
+    padding: 0; margin: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0px 10px 10px 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: azure;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    font-size: 21px;
+    color: whitesmoke;
+}
+
+nav ul li a.active{
+    text-decoration: underline;
+    text-decoration-color: orangered;
+    color: azure; 
+}
+
+.right {
+    display: inline-block;
+    position: absolute;
+    top: 35px;
+    right: 250px;
+}
+
+.right button{
+    padding: 10px 15px;
+    background-color: transparent;
+    color: azure;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid orangered;
+}
+
+.right button:hover{
+    background-color: orangered;
+}
+
+.container {
+    margin: 40px 40px;
+    padding: 50px 20px;
+    width: 35%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.tagline {
+    font-size: 30px;
+    color: azure;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.25);
+    text-align: center;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group input {
+    width: 290px;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+.form-group button {
+    width: 210px;
+    padding: 4px 20px;
+    margin: 10px;
+    border: 1px solid black;
+    background-color: orangered;
+    color: azure;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}   
+
+.form-group button:hover {
+    background-color: #ff6833;
+}   
+
+.genderselect {
+    width: 302px;
+    padding: 3px;
+    margin: 2px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+.footer {
+    background: rgba(33, 33, 33, 0.75);
+    color: azure;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info {
+    flex-basis: 45%;
+    margin: 10px 147px;
+    padding: 2px;
+}
+
+.social-media {
+    width: 175px;
+    margin: 10px 220px;
+    padding: 2px;
+}
+
+.contact-info p {
+    margin: 2px;
+}
+
+.social-media h3{
+    padding: 15px 0px;
+    margin: 1px 0px
+}
+
+.social-links {
+    padding: 0px 0px;
+    margin: 0px 3px;
+}
+
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
