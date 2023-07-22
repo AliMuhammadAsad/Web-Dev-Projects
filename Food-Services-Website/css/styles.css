@@ -1,0 +1,543 @@
+/* CSS Reset */
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* CSS Vars */
+:root {
+    --navbar-height: 50px;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 1; width: 100%;
+    background: transparent;
+}
+
+nav::before{
+    content: "";
+    background-color: #aaaaaa;
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%; width: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-left: 150px;
+}
+
+nav ul {
+    margin-left: 10px;
+    display: flex;
+    list-style: none;
+}
+
+nav ul .item{
+    margin-top: 50px;
+    margin-right: 15px;
+}
+
+nav ul .item a{
+    text-decoration: none;
+    color: azure;
+    font-weight: bold;
+    font-size: large;
+    padding: 3px 10px;
+    border-radius: 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul .item a:hover{
+    background-color: #ff9100;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 15px;
+}
+
+/* Home Section */
+
+.home {
+    position: relative;
+    background-image: url("../assets/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - var(--navbar-height));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: azure;
+    text-align: center;
+    padding: 20px;
+}
+
+.h-prime {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: -60px;
+    color: azure;
+}
+
+.overlay p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: azure;
+}
+
+.buttongroup {
+    display: flex;
+    gap: 20px;
+}
+
+button.booktable {
+    background-color: #ff6600;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+button.takeaway {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+button.booktable:hover {
+    background-color: #ff9100;
+}
+
+button.takeaway:hover {
+    background-color: azure;
+    color: black;
+}
+
+/* Services */
+
+.services-container {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+    background-image: url("../assets/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.h-services {
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    color: whitesmoke;
+}
+
+#services {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+#services .box {
+    width: 359px;
+    padding: 20px;
+    background-color: rgba(100, 100, 100, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 50px;
+}
+
+#services .box img{
+    width: 150px;
+    height: 150px;
+    margin-top: -15px;
+}
+
+#services .box h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -10px;
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+#services .box p {
+    margin-top: -10px;
+    font-size: 14px;
+    color: blanchedalmond;
+}
+
+/* Menu */
+
+.menu-container {
+    background-color: #ebebeb;
+    padding: 50px 0;
+}
+
+.smallheading {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: orangered;
+}
+
+.menu-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.menu-container p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.viewmenu-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.viewmenu {
+    margin: 10px auto;
+    padding: 10px;
+    width: 160px;
+    color: orangered;
+    font-weight: bolder;
+    background: transparent;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.viewmenu:hover {
+    color: whitesmoke;
+    background-color: orangered;
+}
+  
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.menu-item {
+    width: 300px;
+    margin: 20px;
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+
+    background-color: transparent;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    border-radius: 5px;
+}
+  
+.menu-item img {
+    width: 200px;
+    height: 200px;
+    object-fit:contain;
+    /* margin-bottom: 20px; */
+}
+
+.menu-item img:hover {
+    width: 205px; height: 205px;
+    cursor: pointer;
+}
+  
+.item-name {
+    font-size: 24px;
+    color: orangered;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.item-name:hover {
+    font-size: 26px;
+    color:#ff6600;
+    cursor: pointer;
+}
+  
+.item-description {
+    font-size: 16px;
+    /* color: #777777; */
+    color: midnightblue;
+    margin-bottom: 10px;
+}
+  
+/* .item-price {
+    display: inline-block;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+} */
+
+/* Client/Sponsors/Partners */
+
+.partners-container {
+    position: relative;
+    background-image: url("../assets/bg3-copy.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+.partners-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.partners-text {
+    margin-left: 100px;
+    flex: 0.8;
+    color: azure;
+    text-align: left;
+}
+
+.partners-title {
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.partners-container p {
+    margin-bottom: 20px;
+}
+
+.partners {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    margin-left: 150px;
+}
+
+.partner {
+    margin: 10px;
+}
+
+.partners img {
+    width: 200px;
+}
+
+/* Contact Us Section */
+
+.contact-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: black;
+    border: 2px solid black;
+    padding: 50px 0px;
+}
+
+.logo-section {
+    color: azure;
+    margin-top: 50px;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-us-logo {
+    margin-bottom: 5px;
+}
+
+.contact-us-logo img {
+    width: 50px;
+    position: absolute;
+}
+
+.contact-us-logo h2 {
+    margin-top: 15px;
+    margin-left: 60px;
+}
+
+.contact-us-logo p {
+    margin-top: 10px;
+    width: 225px;
+    padding: 3px;
+    font-size: 14px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+}
+
+.socials h3 {
+    position: absolute;
+    font-weight: normal;
+}
+
+.socials ul {
+    position: relative;
+    list-style: none;
+    padding: 0; margin-top: 50px;
+    display: flex;
+}
+
+.socials ul li {
+    margin-right: 20px;
+}
+
+.socials ul li a {
+    color: azure;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.socials ul li a:hover {
+    color: #ff9100;
+    cursor: pointer;
+}
+
+.contact-info {
+    margin-top: 50px;
+    color: azure;
+    width: 15%;
+}
+
+.contact-info h3 {
+    font-size: 22px;
+    margin-top: 13px;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.opening-hours {
+    margin-top: 50px;
+    color: azure;
+    border: 2px solid black;
+}
+
+.opening-hours h3 {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.opening-hours ul {
+    list-style: none;
+    padding: 0; margin: 0;
+}
+
+.opening-hours ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.opening-hours ul li i {
+    margin-right: 5px;
+}
+
+.leave-message {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: azure;
+    width: 33%;
+}
+
+.leave-message h3 {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.leave-message form {
+    display: flex;
+    flex-direction: column;
+}
+
+.leave-message form input {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.leave-message form textarea {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 250px; height: 100px;
+}
+
+.leave-message form button {
+    padding: 5px 10px;
+    width: 100px;
+    background-color: transparent;
+    color: azure;
+    font-weight: bold;
+    border: 2px solid azure;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: color 0.3s ease, background-color 0.3s ease;
+}
+
+.leave-message form button:hover {
+    color: black;
+    font-weight: bold;
+    background-color: #ff9100;
+    border: 2px solid #ff9100;
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: azure;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
