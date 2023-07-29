@@ -1,0 +1,199 @@
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+body{
+    background: rgb(0,104,255);
+    background: linear-gradient(90deg, rgba(0,104,255,1) 0%, rgba(37,213,214,1) 50%, rgba(1,151,255,1) 100%);
+}
+
+nav {
+    background-color: #004;
+    color: white;
+    height: 75px;
+    font-size: 30px;
+    display: flex; align-items: center;
+    padding: 0 20px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.wrapper{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 55%; left: 50%;
+    display: flex;
+    width: 60%;
+}
+
+.container{
+    width: 80vmin; height: 70vmin;
+    display: flex; flex-wrap: wrap;
+    gap: 2vmin;
+}
+
+.button-option {
+    background: #ffffff;
+    height: 22vmin;
+    width: 22vmin;
+    border: none;
+    border-radius: 8px;
+    font-size: 12vmin;
+    color: maroon;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.button-option:hover{
+    background-color: rgba(230, 230, 230, 1);
+}
+
+#reset {
+    font-size: 1.3em;
+    padding: 3% 10%;
+    border-radius: 8px;
+    position: relative;
+    background-color: #004;
+    color: #ffffff;
+    border: none;
+    position: relative;
+    margin: 1.5em auto 0 auto;
+    display: block;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+#reset:hover{
+    background-color: #0a0027;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+#info{
+    font-size: 1.5rem;
+}
+
+.imgbox{
+    position: absolute;
+    margin-left: -5%;
+    display: flex; flex-direction: column; align-items: center;
+}
+
+.imgbox img{
+    width: 80%; height: auto;
+}
+
+.imgbox p{
+    font-size: 1.5rem;
+}
+
+.imgbox.hide{
+    display: none;
+}
+
+/* Desktops and some tablets */
+@media (min-width:768px) and (max-width:1279px){
+    .wrapper{
+        width: 90%;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    #info{
+        font-size: 1.2rem;
+    }
+    .imgbox img{
+        width: 70%;
+    }
+    .imgbox p{
+        font-size: 1.2rem;
+    }
+    #reset {
+        font-size: 1.2em;
+    }
+}
+
+/* Tablets - mostly low res */
+@media (min-width:481px) and (max-width:767px){
+    .wrapper{
+        flex-direction: column;
+        width: 90%;
+        /* margin-top: -150px; */
+    }
+    .container{
+        width: 90vmin;
+    }
+    .button-option{
+        font-size: 10vmin;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .gameInfo{
+        display: flex;
+        flex-direction: column;
+    }
+    #info{
+        font-size: 1.2rem;
+    }
+    .imgbox{
+        left: 30%;
+    }
+    .imgbox img{
+        width: 40%;
+    }
+    .imgbox p{
+        font-size: 1.2rem;
+    }
+    #reset {
+        font-size: 1.2em;
+        padding: 2% 7%;
+        border-radius: 8px;
+        margin: 1.5em 0 0 0;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width:480px){
+    .wrapper{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .container{
+        width: 80vmin;
+    }
+
+    .button-option{
+        font-size: 8vmin;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+    .gameInfo{
+        display: flex; flex-direction: column;
+    }
+    #info{
+        font-size: 1rem;
+    }
+    #reset{
+        font-size: 1rem;
+        padding: 1% 5%;
+        margin: 1.5em 0 0 0;
+    }
+    .imgbox{
+        left: 30%;
+    }
+    .imgbox img{
+        width: 40%;
+    }
+    .imgbox p{
+        font-size: 1rem;
+    }
+}
